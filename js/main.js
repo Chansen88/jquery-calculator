@@ -2,7 +2,7 @@ var screenstring = "";
 var operator = false;
 var snd = new Audio("sound.wav");
 var cash = new Audio("cash.wav");
-var laser = new Audio("laser.wav")
+var laser = new Audio("hogan.mp3")
 
 function calculate() {
   var a = '';
