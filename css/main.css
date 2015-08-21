@@ -1,9 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700|Orbitron);
 
+
+html{
+  cursor:  url(mouse.png) 31 0, default;
+}
+
+html:active{
+  cursor: url(explode.png) 62 0, default;
+}
+
+
 body {
   background: #71B66F;
   padding: 20px;
   width: 100%;
+
+
 }
 
 #calculator {
@@ -64,7 +76,6 @@ body {
   border-radius: 3px;
   border: none;
   box-shadow: inset 0px 1px 0px #5E626D, 0px 5px 0px 0px #45637F;
-  cursor: pointer;
   float: left;
   font-family: 'Oswald', sans-serif;
   width: 70px;

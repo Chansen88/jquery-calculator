@@ -1,5 +1,9 @@
 var screenstring = "";
 var operator = false;
+var snd = new Audio("sound.wav");
+var cash = new Audio("cash.wav");
+var laser = new Audio("laser.wav")
+
 function calculate() {
   var a = '';
   var b = '';
@@ -30,16 +34,19 @@ function calculate() {
     }
     screenstring = screenstring.toString();
     screenstring = screenstring.substring(0,8);
+    cash.play();
   }
 }
 $(function(){
     $('.buttons').on('click', 'span', function(){
       var isNumber = "1234567890".includes($(this).html());
       if ($(this).attr('id') === 'cancel'){
+          laser.play();
           screenstring = "";
       } else if ($(this).attr('id') === 'calc'){
           calculate();
       }else if (isNumber || screenstring.length > 0){
+        snd.play();
         if (!operator || isNumber) {
           screenstring += $(this).html();
         }
