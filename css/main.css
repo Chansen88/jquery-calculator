@@ -11,7 +11,7 @@ html:active{
 
 
 body {
-  background: #71B66F;
+  background-image: url("hoganbg.jpg");
   padding: 20px;
   width: 100%;
 
@@ -19,7 +19,7 @@ body {
 }
 
 #calculator {
-  background: #2B3D50;
+  background: rgb(237, 70, 47);
   border-radius: 20px;
   padding: 15px;
   width: 335px;
@@ -34,7 +34,7 @@ body {
 }
 
 #screen {
-  background: #EF5D5D;
+  background: rgb(224, 224, 224);
   border: none;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.4em;
@@ -50,7 +50,7 @@ body {
 }
 
 #cancel {
-  background: #CF7C43;
+  background: rgb(204, 225, 208);
   width: 147px;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .buttons span {
-  background: #3383D2;
+  background: rgb(253, 249, 126);
   border-radius: 3px;
   border: none;
   box-shadow: inset 0px 1px 0px #5E626D, 0px 5px 0px 0px #45637F;

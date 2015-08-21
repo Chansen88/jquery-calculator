@@ -1,8 +1,8 @@
 var screenstring = "";
 var operator = false;
-var snd = new Audio("sound.wav");
+var punch = new Audio("punch.wav");
 var cash = new Audio("cash.wav");
-var laser = new Audio("hogan.mp3")
+var hulk = new Audio("hogan.mp3")
 
 function calculate() {
   var a = '';
@@ -41,12 +41,12 @@ $(function(){
     $('.buttons').on('click', 'span', function(){
       var isNumber = "1234567890".includes($(this).html());
       if ($(this).attr('id') === 'cancel'){
-          laser.play();
+          hulk.play();
           screenstring = "";
       } else if ($(this).attr('id') === 'calc'){
           calculate();
       }else if (isNumber || screenstring.length > 0){
-        snd.play();
+        punch.play();
         if (!operator || isNumber) {
           screenstring += $(this).html();
         }
@@ -58,7 +58,6 @@ $(function(){
       $('#screen').html(screenstring);
     });
     $('body').on("keydown", function(event) {
-      console.log(event);
       switch (event.keyCode) {
         case 8:
           screenstring = "";
@@ -71,6 +70,8 @@ $(function(){
           }
           calculate();
           break;
+        case event.keyCode:
+          punch.play();
         case 49:
           screenstring += "1";
           break;
