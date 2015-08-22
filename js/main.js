@@ -70,30 +70,36 @@ $(function(){
           }
           calculate();
           break;
-        case event.keyCode:
-          punch.play();
         case 49:
+          punch.play();
           screenstring += "1";
           break;
         case 50:
           screenstring += "2";
+          punch.play();
           break;
         case 51:
           screenstring += "3";
+          punch.play();
           break;
         case 52:
           screenstring += "4";
+          punch.play();
           break;
         case 53:
           screenstring += "5";
+          punch.play();
           break;
         case 54:
           screenstring += "6";
+          punch.play();
           break;
         case 55:
           screenstring += "7";
+          punch.play();
           break;
         case 56:
+          punch.play();
           if (event.shiftKey) {
             screenstring += "x";
             break;
@@ -101,16 +107,20 @@ $(function(){
           screenstring += "8";
           break;
         case 57:
+          punch.play();
           screenstring += "9";
           break;
         case 48:
+          punch.play();
           screenstring += "0";
         case 191:
+         punch.play();
          if (screenstring.length > 0 && !operator){
            screenstring += $('.buttons span:nth-child(2)').html();
          }
           break;
         case 189:
+          punch.play();
           if (screenstring.length > 0 && !operator){
             screenstring += "-";
           }
